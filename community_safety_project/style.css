@@ -1,0 +1,156 @@
+/* ===== General Page Styling ===== */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF9E5; /* light yellow */
+    color: #000;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* ===== Header & Navigation ===== */
+header {
+    background-color: #000;
+    color: #FFD700; /* yellow */
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #FFD700;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    background: linear-gradient(135deg, #FFD700, #FFC700);
+    padding: 70px 20px;
+    color: #000;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.1rem;
+}
+
+/* ===== Sections ===== */
+section {
+    padding: 50px 20px;
+}
+
+section h2 {
+    margin-bottom: 25px;
+}
+
+/* ===== Forms ===== */
+form {
+    max-width: 450px;
+    margin: auto;
+    background: #FFFFFF;
+    padding: 25px;
+    border-radius: 10px;
+    border: 2px solid #FFD700;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+input,
+textarea,
+select {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #000;
+    font-size: 15px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* ===== Buttons ===== */
+button {
+    padding: 12px 25px;
+    margin-top: 10px;
+    background-color: #000;
+    color: #FFD700;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+/* ===== Account Section ===== */
+.account-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.account-box {
+    width: 320px;
+}
+
+/* ===== Messages ===== */
+#formMessage,
+#signupMessage,
+#loginMessage {
+    margin-top: 10px;
+    font-weight: bold;
+    color: green;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #000;
+    color: #FFD700;
+    padding: 25px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .account-container {
+        flex-direction: column;
+    }
+}
